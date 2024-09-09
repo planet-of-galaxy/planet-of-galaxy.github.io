@@ -33,8 +33,8 @@ $(document).ready(function(){
     function setAddrLinkGroup(){
         if(webAddress){
             webAddress.forEach(function(value, key) {
-                if(value.length > 5) {
-                    value = value.substring(0, 4) + "..";
+                if(value.length > 10) {
+                    value = value.substring(0, 9) + "..";
                 }
                 $("#addrLinkGroup").append("<div class='addr_link'><span class='link_name'>"
                     + value + "</span><p class='key'>"

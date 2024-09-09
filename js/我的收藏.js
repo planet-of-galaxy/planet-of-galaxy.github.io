@@ -143,8 +143,8 @@ $(document).ready(function(){
     function setWebAddress() {
         if(webAddress){
             webAddress.forEach(function(value, key) {
-                if(value.length > 5) {
-                    value = value.substring(0, 4) + "..";
+                if(value.length > 10) {
+                    value = value.substring(0, 9) + "..";
                 }
                 $("#webAddress").append("<div class='addr'><span class='addr_name'>"
                     + value + "</span><span class='myAddr_delete'><img class='delete_img' src='../素材/delete_black.png'><p class='addr_web'>"
