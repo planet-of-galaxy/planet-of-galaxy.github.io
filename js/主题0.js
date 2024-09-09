@@ -12,6 +12,7 @@ $(document).ready(function(){
     // 点击中间偏左模块
     $("#middle_left").click(function(){
         setHiddenBlockStatus(0, false);
+        restoreSearch();
     })
 
     // 点击中间的中间模块
@@ -22,6 +23,7 @@ $(document).ready(function(){
     // 点击中间偏右模块
     $("#middle_right").click(function(){
         setHiddenBlockStatus(0, false);
+        restoreSearch();
     })
 
     function setHiddenBlockArray() {
@@ -40,6 +42,10 @@ $(document).ready(function(){
             $("#" + hidden_block_id).fadeOut();
         }
         
+    }
+
+    function restoreSearch() {
+        $(".search-input").css("width","0px");
     }
 
 })

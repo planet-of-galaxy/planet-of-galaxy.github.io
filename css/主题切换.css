@@ -6,7 +6,7 @@
 }
 
 #theme:hover #theme_context {
-    display: block;
+    visibility: visible;
 }
 
 /* #theme:hover #theme_context{
@@ -18,7 +18,8 @@
     float: left;
 }
 #theme_context {
-    display: none;
+    display: block;
+    visibility: hidden;
 }
 
 #theme_id {

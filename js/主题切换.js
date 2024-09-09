@@ -47,7 +47,7 @@ $(document).ready(function(){
 
         if (theme == "主题0") {
             window.location.href = "主题0.html";
-        } else if (theme = "主题1"){
+        } else if (theme == "主题1"){
             window.location.href = "主题1.html";
         } else {
             localStorage.setItem("theme", "主题0");

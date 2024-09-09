@@ -1,7 +1,16 @@
 html,body {
     margin: 0;
     padding: 0;
-    background-image: url("../img/梦中的婚礼_正午.jpg");
+    /* background-image: url("../img/教堂婚礼_清晨.jpg"); */
+}
+
+#addrLinkGroup {
+    /* background-color: red; */
+    background-image: url("../素材/深夜.png");
+    min-width: 800px;
+    max-width: 1200px;
+    border-radius: 10px;
+    padding-top: 10px;
 }
 
 /* 顶部部分模块 */
@@ -10,7 +19,7 @@ html,body {
 	padding: 5px;
     width: calc(100% - 10px);
     min-width: 800px;
-    height: 50px;
+    min-height: 50px;
 }
 
 /* 中间部分模块 */
@@ -20,7 +29,7 @@ html,body {
     display: flex;
 	flex-direction: row;
     background-attachment:fixed;
-    min-height: calc(100vh - 110px);
+    min-height: calc(100vh - 304px);
 	width: calc(100% - 10px);
     min-width: 800px;
 }
