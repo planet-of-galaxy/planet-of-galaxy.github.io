@@ -1,0 +1,55 @@
+#addrLinkGroup {
+    /* background-color: red; */
+    background-image: url("../素材/夜晚.png");
+    min-width: 800px;
+    max-width: 1200px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+/* 编辑按钮 */
+#edit {
+    text-align: left;
+}
+    
+#edit_kid {
+    /* display: none; */
+     margin-left: 50px;
+     color: gray;
+}
+
+#edit_img {
+    height: 20px;
+    transition: filter 0.1s ease; /* 添加过渡效果 */
+}
+
+#edit_img:hover {
+    /* 使图片变为黑色 */
+    /* filter: brightness(0) invert(1); */
+    /* 变为白色 */
+    filter: brightness(0) invert(100%) saturate(0);
+}
+
+.addr_link {
+    height: 60px;
+    width: 90px;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.addr_link:hover {
+    color: pink;
+    border-color: pink;
+}
+
+.key {
+    display: none;
+}

@@ -1,0 +1,73 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/梦中的婚礼_正午.jpg");
+}
+
+/* 顶部部分模块 */
+#body_top{
+    margin: 0;
+	padding: 5px;
+    width: calc(100% - 10px);
+    min-width: 800px;
+    height: 50px;
+}
+
+/* 中间部分模块 */
+#body_middle {
+    margin: 0;
+	padding: 5px;
+    display: flex;
+	flex-direction: row;
+    background-attachment:fixed;
+    min-height: calc(100vh - 110px);
+	width: calc(100% - 10px);
+    min-width: 800px;
+}
+
+/* 中间偏左部分模块 */
+#middle_left {
+    flex: 1;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+/* 中间的中间部分模块 */
+#middle_middle {
+    flex: 5;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* 中间偏右部分模块 */
+#middle_right {
+    flex: 1;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+/* 底部部分模块 */
+#body_bottom{
+    margin: 0;
+	padding: 5px;
+    height: 30px;
+}
+
+/* 空白行 */
+.white_block {
+    height: 5px;
+}
+
+/* 测试模块 */
+.test_block {
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* 隐藏模块 */
+.hidden_block {
+    display: none;
+}

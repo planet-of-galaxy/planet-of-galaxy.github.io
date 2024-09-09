@@ -1,107 +1,68 @@
 <!DOCTYPE html>
+
+<!-- 常用模块 -->
+<!-- "插入空行" <div class="white_block"></div> -->
+<!-- "插入测试块" <div class="test_block"></div> -->
+
 <html>
     <head>
-        <title>Dream Index</title>
+        <title>经典架构</title>
         <meta charset="utf-8">
-        <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">
+        <link rel="icon" href="素材/planet.png">
+        <link href="css/经典架构.css" rel="stylesheet">
         <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/time.js" charset="utf-8"></script>
-        <script src="js/index.js" charset="utf-8"></script>
+        <script src="js/经典架构.js" charset="utf-8"></script>
+        <link href="css/时钟.css" rel="stylesheet">
+        <script src="js/时钟.js" charset="utf-8"></script>
+        <link href="css/收藏链接.css" rel="stylesheet">
+        <script src="js/收藏链接.js" charset="utf-8"></script>
+        <link href="css/搜索框.css" rel="stylesheet">
+        <script src="js/搜索框.js" charset="utf-8"></script>
+        <link href="css/图标.css" rel="stylesheet">
+        <script src="js/图标.js" charset="utf-8"></script>
     </head>
     <body>
-            <div id="top">
-                <p id="table"></p>
+        <div id="body_top">
+            <!-- 顶部部分模块 -->
+            <div class="white_block"></div>
+            <div class="white_block"></div>
+        </div>
+        <div id="body_middle">
+            <!-- 中间部分模块 -->
+            <div id="middle_left">
+                <!-- 中间偏左部分模块 -->
+                <div class="white_block"></div>
+                <div class="white_block"></div>
+                <div class="white_block"></div>
+                <div class="white_block"></div>
+                <div id="time_block">
+                    <div id="time_context">00:00</div>
+                    <div id="week_context">XX月XX日 星期X</div>
+                </div>
             </div>
-            <div id="middle">
-                <div id="time-box">
-                    <div id="time"></div>
-                    <div id="week"><p id="wk"></p></div>
-                    <audio id="music" src="materail/bgm/夜晚.mp3" controls="controls">浏览器不支持audio标签</audio>
-                </div>
-                <div id="search-body">
-                    <form id="search1" class="search">
-                        <input class="search-input" type="text">
-                        <a href="" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </a>
-                        <input class="search-submit" type="submit">
-                    </form>
-                    <form id="search2" class="search">
-                        <input class="search-input" type="text">
-                        <a href=""  class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </a>
-                        <input class="search-submit" type="submit">
-                    </form>
-                    <form id="search3" class="search">
-                        <input class="search-input" type="text">
-                        <a href="" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </a>
-                        <input class="search-submit" type="submit">
-                    </form>
-                </div>
-                <div id="favorite">
-                    <div id="favoritAndCollect">
-                        <div id="fac-box">
-                            <p id="myFavorite" class="fac">常 用 网 址</p>
-                            <p id="collect" class="fac">我 的 收 藏</p>
+            <div id="middle_middle">
+                <!-- 中间的中间部分模块 -->
+                <div id="hidden_block_0" class="hidden_block">
+                    <div id="addrLinkGroup">
+                        <div id="search-box2">
+                            <form id="search4">
+                                <input type="text" id="search-input4"/>
+                                <a href="" id="search-btn2"><img id="search-submit1" src="素材/search.png"/></a>
+                                <input class="search-submit" type="submit">
+                            </form>
                         </div>
-                    </div>
-                    <div id="webAddress1" class="webAddress-box">
-                        <p id="blbl" class="webAddress">
-                            <span class="word">哔</span>
-                            <span class="word">哩</span>
-                            <span class="word">哔</span>
-                            <span class="word">哩</span>
-                        </p>
-                        <p id="bdtb" class="webAddress">
-                            <span class="word">百</span>
-                            <span class="word">度</span>
-                            <span class="word">贴</span>
-                            <span class="word">吧</span>
-                        </p>
-                        <p id="xlwb" class="webAddress">
-                            <span class="word">新</span>
-                            <span class="word">浪</span>
-                            <span class="word">微</span>
-                            <span class="word">博</span>
-                        </p>
-                        <p id="ggfy" class="webAddress">
-                            <span class="word">谷</span>
-                            <span class="word">歌</span>
-                            <span class="word">翻</span>
-                            <span class="word">译</span>
-                        </p>
-                        <p id="wyyy" class="webAddress">
-                            <span class="word">网</span>
-                            <span class="word">易</span>
-                            <span class="word">音</span>
-                            <span class="word">乐</span>
-                        </p>
-                        <p id="csdn" class="webAddress">
-                            <span class="word">C</span>
-                            <span class="word">S</span>
-                            <span class="word">D</span>
-                            <span class="word">N</span>
-                        </p>
-                    </div>
-                    <div id="webAddress2" class="webAddress-box"></div>
-                    <div id="webAddress3" class="webAddress-box">
-                        <div>
-                            <input class="addweb" type="input" id="key" placeholder="填写名称"><br>
-                            <input class="addweb" type="input" id="value" placeholder="填写网址"><br>
-                            <div>
-                                <button id="add_can" class="add_button">取消</button>
-                                <button id="add_sub" class="add_button">确认</button>
-                            </div>
-                        </div>
+                        <div class="white_block"></div>
+                        <div class="white_block"></div>
+                        <p id="edit"><a id="edit_kid" href="html/我的收藏.html"><img id="edit_img" src="素材/edit.png"/></a></p> 
                     </div>
                 </div>
             </div>
-            <div id="bottom">
-                <p id="prompt"> </p>
+            <div id="middle_right">
+                <!-- 中间偏右部分模块 -->
             </div>
+        </div>
+        <div id="body_bottom">
+            <!-- 底部部分模块 -->
+        </div>
     </body>
 </html>
