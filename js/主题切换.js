@@ -8,23 +8,23 @@ $(document).ready(function(){
         return;
     })
 
-    var last_time_minutes;
-    var last_time_seconds;
-    $("#theme").hover(function(){
-        var mDate = new Date();
-        var minutes = mDate.getMinutes();
-		var seconds = mDate.getSeconds();
+    // var last_time_minutes;
+    // var last_time_seconds;
+    // $("#theme").hover(function(){
+    //     var mDate = new Date();
+    //     var minutes = mDate.getMinutes();
+	// 	var seconds = mDate.getSeconds();
  
-        if (last_time_minutes == minutes && last_time_seconds > seconds - 2) {
-            return;
-        }
+    //     if (last_time_minutes == minutes && last_time_seconds > seconds - 2) {
+    //         return;
+    //     }
 
-        last_time_minutes = minutes;
-        last_time_seconds = seconds;
-        $("#theme_context").fadeIn();
-    }, function() {
-        $("#theme_context").fadeOut();
-    })
+    //     last_time_minutes = minutes;
+    //     last_time_seconds = seconds;
+    //     $("#theme_context").fadeIn();
+    // }, function() {
+    //     $("#theme_context").fadeOut();
+    // })
 
     function setTheme() {
         // 可以依据时间自动选择不同主题

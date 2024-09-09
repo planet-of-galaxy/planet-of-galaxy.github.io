@@ -5,6 +5,10 @@
     min-width: none;
 }
 
+#theme:hover #theme_context {
+    display: block;
+}
+
 /* #theme:hover #theme_context{
     display: block;
 } */
