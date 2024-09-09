@@ -1,0 +1,22 @@
+#theme {
+    color: black;
+
+    /* 根据theme数量进行调整 */
+    min-width: none;
+}
+
+/* #theme:hover #theme_context{
+    display: block;
+} */
+
+#theme_lable {
+    padding-right: 5px;
+    float: left;
+}
+#theme_context {
+    display: none;
+}
+
+#theme_id {
+    display: none;
+}
