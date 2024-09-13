@@ -65,15 +65,19 @@
     margin-bottom: 50px;
 }
 
+:root {
+    --hover-color: #f54e48; /* 定义颜色变量 */
+}
+
 .addr_link:hover {
-    color: #7b72f3;
-    border-color: #7b72f3;
-    box-shadow: 0 0  10px #7b72f3,
-                0 0  20px #7b72f3;
-    text-shadow: 0 0  10px #7b72f3,
-                 0 0  20px #7b72f3,
-                 0 0  40px #7b72f3,
-                 0 0  80px #7b72f3;
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+    box-shadow: 0 0  10px var(--hover-color),
+                0 0  20px var(--hover-color);
+    text-shadow: 0 0  10px var(--hover-color),
+                 0 0  20px var(--hover-color),
+                 0 0  40px var(--hover-color),
+                 0 0  80px var(--hover-color);
 }
 
 .key {

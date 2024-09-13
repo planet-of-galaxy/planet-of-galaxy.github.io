@@ -11,11 +11,17 @@
     <body>
         <div id="theme">
             <div id="theme_lable">主题</div>
-            <form id="theme_context" name="theme_context">
-                <input type="radio" id="theme_0" name="theme_radio" value="主题0"/>主题0
-                <input type="radio" id="theme_1" name="theme_radio" value="主题1"/>主题1
-                <input type="submit" id="submit" value="确认"/>
-            </form><br>
+            <div id="theme_container">
+                <form id="theme_context" name="theme_context">
+                    <span class="theme_frame">
+                        <input type="radio" id="theme_0" name="theme_radio" value="主题0"/>主题0
+                        <input type="radio" id="theme_1" name="theme_radio" value="主题1"/>主题1
+                    </span>
+                    <span class="theme_frame">
+                        <input type="submit" id="submit" value="确认"/>
+                    </span>
+                </form>
+            </div><br>
             <p id="theme_id">index</p>
             <div id="white_block"></div>
         </div>

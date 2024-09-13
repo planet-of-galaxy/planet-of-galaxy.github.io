@@ -17,13 +17,13 @@
         <script src="../js/主题0.js" charset="utf-8"></script>
         <link href="../css/时钟.css" rel="stylesheet">
         <script src="../js/时钟.js" charset="utf-8"></script>
-        <link href="../css/收藏链接.css" rel="stylesheet">
+        <link href="../css/收藏链接0.css" rel="stylesheet">
         <script src="../js/收藏链接.js" charset="utf-8"></script>
         <link href="../css/搜索框.css" rel="stylesheet">
         <script src="../js/搜索框.js" charset="utf-8"></script>
         <link href="../css/图标.css" rel="stylesheet">
         <script src="../js/图标.js" charset="utf-8"></script>
-        <link href="../css/主题切换.css" rel="stylesheet">
+        <link href="../css/主题切换0.css" rel="stylesheet">
         <script src="../js/主题切换.js" charset="utf-8"></script>
     </head>
     <body>
@@ -37,11 +37,12 @@
             <!-- 顶部部分模块 -->
             <div id="theme">
                 <div id="theme_lable">主题</div>
-                <form id="theme_context" name="theme_context">
-                    <input type="radio" id="theme_0" name="theme_radio" value="主题0"/>主题0
-                    <input type="radio" id="theme_1" name="theme_radio" value="主题1"/>主题1
-                    <input type="submit" id="submit" value="确认"/>
-                </form><br>
+                <div id="theme_container">
+                    <form id="theme_context" name="theme_context">
+                        <input type="radio" id="theme_0" name="theme_radio" value="主题0"/>主题0
+                        <input type="radio" id="theme_1" name="theme_radio" value="主题1"/>主题1
+                        <input type="submit" id="submit" value="确认"/>
+                    </form></div><br>
                 <p id="theme_id">主题0</p>
                 <div id="white_block"></div>
             </div>
@@ -93,7 +94,7 @@
                                 <input class="search-submit" type="submit">
                             </form>
                         </div> -->
-                        <p id="edit"><a id="edit_kid" href="我的收藏.html"><img id="edit_img" src="../素材/edit_white.png"/></a></p> 
+                        <p id="edit"><a id="edit_kid" href="我的收藏.html"><span id="edit_frame"><img id="edit_img" src="../素材/edit_white.png"/></span></a></p> 
                     </div>
                 </div>
             </div>

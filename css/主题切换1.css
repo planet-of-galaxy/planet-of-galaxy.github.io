@@ -1,5 +1,5 @@
 #theme {
-    color: white;
+    color: black;
 
     /* 根据theme数量进行调整 */
     min-width: none;
@@ -51,12 +51,11 @@
 }
 
 #submit {
-    background-image: url("../素材/白色半透明.png");
+    background-image: url("../素材/正午.png");
     border-radius: 3px;
     border-style: none;
 }
 
 #submit:hover {
-    background-image: url("../素材/紫色半透明.png");
-    color: white;
+    background-image: url("../素材/清晨.png");
 }
