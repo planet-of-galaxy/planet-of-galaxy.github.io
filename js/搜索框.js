@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#search1 .search-btn").click(function(){
-        var $href = "https://www.so.com/s?ie=utf-8&fr=none&src=360sou_newhome&q=" + $("#search1 .search-input").val();
+        var $href = "https://www.bing.com/search?q=" + $("#search1 .search-input").val();
         window.location.href= $href;
         return false;
     })
@@ -15,7 +15,7 @@ $(document).ready(function(){
         return false;
     })
     $("#search1 .search-submit").click(function(){
-        var $href = "https://www.so.com/s?ie=utf-8&fr=none&src=360sou_newhome&q=" + $("#search1 .search-input").val();
+        var $href = "https://www.bing.com/search?q=" + $("#search1 .search-input").val();
         window.location.href= $href;
         return false;
     })

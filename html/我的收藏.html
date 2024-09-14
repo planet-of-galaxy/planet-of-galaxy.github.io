@@ -8,7 +8,8 @@
     <head>
         <title>我的收藏</title>
         <meta charset="utf-8">
-        <link rel="icon" href="素材/planet.png">
+        <!-- <link rel="icon" href="https://i0.hdslb.com/bfs/static/jinkela/long/images/favicon.ico"> -->
+        <link rel="icon" href="../素材/star.png">
         <link href="../css/我的收藏.css" rel="stylesheet">
         <script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../js/我的收藏.js" charset="utf-8"></script>
@@ -32,14 +33,981 @@
                     <input id="addWeb_webAddress" class="addWeb_input" placeholder='如： "https://www.baidu.com"' type="text" name="webAddress"/>
                     <button id="addWebSubmit">添加</button>
                 </div>
+                <div class="white_block"></div>
+                <div class="white_block"></div>
+                <div class="white_block"></div>
+                <div class="white_block"></div>
+                <div class="white_block"></div>
                 <h3>已添加的网址</h3>
                 <!-- <p id="edit"><span id="edit_kid">恢复</span></p> -->
                 <p id="addr">网址</p>
                 <div id="webAddress">
                 </div>
+                <div class="white_block"></div>
+                <h3>选择添加</h3>
+                <div class="selectWeb">
+                    <p class="web_class">影视</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>腾讯视频</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">腾讯视频</p>
+                            <p class='addr_web'>https://v.qq.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>哔哩哔哩</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">哔哩哔哩</p>
+                            <p class='addr_web'>www.bilibili.com</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>爱奇艺</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">爱奇艺</p>
+                            <p class='addr_web'>https://www.iqiyi.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>抖音</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">抖音</p>
+                            <p class='addr_web'>https://www.douyin.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>快手</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">快手</p>
+                            <p class='addr_web'>https://www.kuaishou.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>西瓜视频</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">西瓜视频</p>
+                            <p class='addr_web'>https://www.ixigua.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>芒果TV</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">芒果TV</p>
+                            <p class='addr_web'>https://w.mgtv.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>优酷</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">优酷</p>
+                            <p class='addr_web'>https://www.youku.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>央视网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">央视网</p>
+                            <p class='addr_web'>https://tv.cctv.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>搜狐视频</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">搜狐视频</p>
+                            <p class='addr_web'>https://tv.sohu.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>豆瓣电影</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">豆瓣电影</p>
+                            <p class='addr_web'>https://movie.douban.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>虎牙直播</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">虎牙直播</p>
+                            <p class='addr_web'>https://www.huya.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>斗鱼直播</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">斗鱼直播</p>
+                            <p class='addr_web'>https://www.douyu.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>YouTube</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">YouTube</p>
+                            <p class='addr_web'>https://www.youtube.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">生活</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>支付宝</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">支付宝</p>
+                            <p class='addr_web'>https://www.alipay.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>大众点评</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">大众点评</p>
+                            <p class='addr_web'>https://www.dianping.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>美团</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">美团</p>
+                            <p class='addr_web'>hhttps://www.meituan.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>饿了么</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">饿了么</p>
+                            <p class='addr_web'>https://www.ele.me/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>下厨房</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">下厨房</p>
+                            <p class='addr_web'>https://www.xiachufang.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>房天下</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">房天下</p>
+                            <p class='addr_web'>https://www1.fang.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>安居客</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">安居客</p>
+                            <p class='addr_web'>https://www.anjuke.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">邮箱</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>QQ邮箱</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">QQ邮箱</p>
+                            <p class='addr_web'>https://mail.qq.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>163邮箱</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">163邮箱</p>
+                            <p class='addr_web'>https://email.163.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>Google邮箱</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">Google邮箱</p>
+                            <p class='addr_web'>https://mail.google.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>新浪邮箱</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">新浪邮箱</p>
+                            <p class='addr_web'>https://mail.sina.com.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>126邮箱</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">126邮箱</p>
+                            <p class='addr_web'>https://mail.126.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>139邮箱</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">139邮箱</p>
+                            <p class='addr_web'>https://mail.10086.cn/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">通讯</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>中国电信</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">中国电信</p>
+                            <p class='addr_web'>https://www.189.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>中国联通</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">中国联通</p>
+                            <p class='addr_web'>https://www.10010.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>中国移动</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">中国移动</p>
+                            <p class='addr_web'>https://www.10086.cn/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">搜索</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>百度</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">百度</p>
+                            <p class='addr_web'>https://www.baidu.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>谷歌</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">谷歌</p>
+                            <p class='addr_web'>https://www.google.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>必应</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">必应</p>
+                            <p class='addr_web'>https://www.bing.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">论坛</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>微博</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">微博</p>
+                            <p class='addr_web'>https://weibo.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>小红书</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">小红书</p>
+                            <p class='addr_web'>https://www.xiaohongshu.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>百度贴吧</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">百度贴吧</p>
+                            <p class='addr_web'>https://tieba.baidu.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>知乎</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">知乎</p>
+                            <p class='addr_web'>https://www.zhihu.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>CSDN</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">CSDN</p>
+                            <p class='addr_web'>https://www.csdn.net/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>X</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">X</p>
+                            <p class='addr_web'>https://x.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>Facebook</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">Facebook</p>
+                            <p class='addr_web'>https://www.facebook.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>QQ空间</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">QQ空间</p>
+                            <p class='addr_web'>https://qzone.qq.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">音声</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>网易云</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">网易云</p>
+                            <p class='addr_web'>https://music.163.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>qq音乐</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">qq音乐</p>
+                            <p class='addr_web'>https://y.qq.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>咪咕音乐</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">咪咕音乐</p>
+                            <p class='addr_web'>https://music.migu.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>千千音乐</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">千千音乐</p>
+                            <p class='addr_web'>https://music.taihe.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>YT music</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">YT music</p>
+                            <p class='addr_web'>https://music.youtube.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">翻译</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>百度翻译</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">百度翻译</p>
+                            <p class='addr_web'>https://fanyi.baidu.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>谷歌翻译</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">谷歌翻译</p>
+                            <p class='addr_web'>https://translate.google.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>有道翻译</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">有道翻译</p>
+                            <p class='addr_web'>https://fanyi.youdao.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">新闻</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>今日头条</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">今日头条</p>
+                            <p class='addr_web'>https://www.toutiao.com/</p>
+                        </span>
+                    </div>
+                    
+                    <div class='select_addr'>
+                        <span class='addr_name'>网易新闻</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">网易新闻</p>
+                            <p class='addr_web'>https://news.163.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>人民网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">人民网</p>
+                            <p class='addr_web'>http://www.people.com.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>中国新闻网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">中国新闻网</p>
+                            <p class='addr_web'>https://www.chinanews.com.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>凤凰军事</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">凤凰军事</p>
+                            <p class='addr_web'>https://mil.ifeng.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>环球网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">环球网</p>
+                            <p class='addr_web'>https://www.huanqiu.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>新浪新闻</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">新浪新闻</p>
+                            <p class='addr_web'>https://news.sina.com.cn/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">AI</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>百度AI</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">百度AI</p>
+                            <p class='addr_web'>https://ai.baidu.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>ChatGPT</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">ChatGPT</p>
+                            <p class='addr_web'>https://chatgpt.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>openAI</span>
+                            <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">openAI</p>
+                            <p class='addr_web'>https://openai.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>google AI</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">google AI</p>
+                            <p class='addr_web'>https://ai.google/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">网盘</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>百度网盘</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">百度网盘</p>
+                            <p class='addr_web'>https://pan.baidu.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>迅雷网盘</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">迅雷网盘</p>
+                            <p class='addr_web'>https://pan.xunlei.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>夸克网盘</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">夸克网盘</p>
+                            <p class='addr_web'>https://pan.quark.cn/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">美图</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>爱赞助</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">爱赞助</p>
+                            <p class='addr_web'>https://azz.net/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>pixbay</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">pixbay</p>
+                            <p class='addr_web'>https://pixabay.com/zh/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>彼岸图网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">彼岸图网</p>
+                            <p class='addr_web'>https://pic.netbian.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>pixiv</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">pixiv</p>
+                            <p class='addr_web'>https://www.pixiv.net/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>动漫图片</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">动漫图片</p>
+                            <p class='addr_web'>https://anime-pictures.net/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>KONA</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">KONA</p>
+                            <p class='addr_web'>https://konachan.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">学习</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>菜鸟教程</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">菜鸟教程</p>
+                            <p class='addr_web'>https://www.runoob.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>MOJI辞書</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">MOJI辞書</p>
+                            <p class='addr_web'>https://www.mojidict.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>leetcode</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">leetcode</p>
+                            <p class='addr_web'>https://leetcode.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>牛客网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">牛客网</p>
+                            <p class='addr_web'>https://www.nowcoder.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>弹琴吧</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">弹琴吧</p>
+                            <p class='addr_web'>https://www.tan8.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>沪江网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">沪江网</p>
+                            <p class='addr_web'>https://www.hujiang.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>开源中国</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">开源中国</p>
+                            <p class='addr_web'>https://www.oschina.net/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>学信网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">学信网</p>
+                            <p class='addr_web'>https://www.chsi.com.cn/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">游戏</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>4399</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">4399</p>
+                            <p class='addr_web'>https://www.4399.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>7k7k</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">7k7k</p>
+                            <p class='addr_web'>https://www.7k7k.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>3DM游戏</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">3DM游戏</p>
+                            <p class='addr_web'>https://www.3dmgame.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>3DM MOD站</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">3DM MOD站</p>
+                            <p class='addr_web'>https://mod.3dmgame.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>NEXUS MODS</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">NEXUS MODS</p>
+                            <p class='addr_web'>https://www.nexusmods.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">资源</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>github</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">github</p>
+                            <p class='addr_web'>https://github.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>cubebrush</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">cubebrush</p>
+                            <p class='addr_web'>https://cubebrush.co/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>flaticon</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">flaticon</p>
+                            <p class='addr_web'>https://www.flaticon.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>磁力资源</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">磁力资源</p>
+                            <p class='addr_web'>https://skrbtso.top/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">购物</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>淘宝</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">淘宝</p>
+                            <p class='addr_web'>https://www.taobao.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>天猫</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">天猫</p>
+                            <p class='addr_web'>https://www.tmall.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>京东</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">京东</p>
+                            <p class='addr_web'>https://www.jd.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">出行</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>12306</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">12306</p>
+                            <p class='addr_web'>https://www.12306.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>携程旅行</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">携程旅行</p>
+                            <p class='addr_web'>https://www.ctrip.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>飞猪旅行</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">飞猪旅行</p>
+                            <p class='addr_web'>https://www.fliggy.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>马蜂窝</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">马蜂窝</p>
+                            <p class='addr_web'>https://www.mafengwo.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>途牛</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">途牛</p>
+                            <p class='addr_web'>https://www.tuniu.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">招聘</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>Boss直聘</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">Boss直聘</p>
+                            <p class='addr_web'>https://www.zhipin.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>前程无忧</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">前程无忧</p>
+                            <p class='addr_web'>https://www.51job.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>猎聘</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">猎聘</p>
+                            <p class='addr_web'>https://www.liepin.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>高校人才网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">高校人才网</p>
+                            <p class='addr_web'>https://www.gaoxiaojob.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>拉钩招聘</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">拉钩招聘</p>
+                            <p class='addr_web'>https://www.lagou.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">汽车</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>有驾</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">有驾</p>
+                            <p class='addr_web'>https://www.yoojia.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>太平洋汽车</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">太平洋汽车</p>
+                            <p class='addr_web'>https://www.pcauto.com.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>易车</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">易车</p>
+                            <p class='addr_web'>https://www.yiche.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>汽车之家</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">汽车之家</p>
+                            <p class='addr_web'>https://www.autohome.com.cn/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">股票</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>股吧</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">股吧</p>
+                            <p class='addr_web'>https://guba.eastmoney.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>同花顺</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">同花顺</p>
+                            <p class='addr_web'>https://www.10jqka.com.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>东方财富</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">东方财富</p>
+                            <p class='addr_web'>https://www.eastmoney.com/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>雪球</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">雪球</p>
+                            <p class='addr_web'>https://xueqiu.com/</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="selectWeb">
+                    <p class="web_class">彩票</p>
+                    <div class='select_addr'>
+                        <span class='addr_name'>竞彩网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">竞彩网</p>
+                            <p class='addr_web'>https://www.sporttery.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>中国福彩</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">中国福彩</p>
+                            <p class='addr_web'>https://www.cwl.gov.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>中国体彩</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">中国体彩</p>
+                            <p class='addr_web'>https://www.lottery.gov.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>新浪彩票</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">新浪彩票</p>
+                            <p class='addr_web'>https://lottery.sina.com.cn/</p>
+                        </span>
+                    </div>
+                    <div class='select_addr'>
+                        <span class='addr_name'>中彩网</span>
+                        <span class='myWeb_status'>
+                            <img class='web_status' src='../素材/more.png'>
+                            <p class="addr_web_name">中彩网</p>
+                            <p class='addr_web'>https://www.zhcw.com/</p>
+                        </span>
+                    </div>
+                </div>
             </div>
             <div id="middle_right">
-                <!-- 中间偏右部分模块 -->
+                    <!-- 中间偏右部分模块 -->
             </div>
         </div>
         <div id="body_bottom">

@@ -1,10 +1,10 @@
-/* #addrLinkGroup {
-    background-image: url("../素材/黄昏.png");
+#addrLinkGroup {
+    background-image: url("../素材/深夜.png");
     min-width: 800px;
-    max-width: 1200px;
+    min-height: 80px;
     border-radius: 10px;
     padding-top: 10px;
-} */
+}
 
 /* 编辑按钮 */
 #edit {
@@ -42,28 +42,37 @@
     color: white;
 }
 
-
-/* #edit_img:hover {
-    使图片变为黑色
-    filter: brightness(0) invert(1);
-    变为白色
-    filter: brightness(0) invert(100%) saturate(0);
-} */
-
 .addr_link {
     height: 60px;
     width: 90px;
     color: white;
     display: inline-flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-style: solid;
     border-width: 1px;
     border-color: white;
     border-radius: 10px;
-    margin-left: 50px;
+    margin-left: 43px;
     margin-bottom: 50px;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 5px;
+    text-overflow: ellipsis; /* 溢出时显示省略号 */
+    overflow: hidden; /* 隐藏超出部分 */
 }
+
+.link_name {
+    white-space: normal;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+    text-align: center;
+    text-overflow: ellipsis; /* 溢出时显示省略号 */
+    white-space: nowrap; /* 不换行 */
+}
+
+
 
 :root {
     --hover-color: #7b72f3; /* 定义颜色变量 */

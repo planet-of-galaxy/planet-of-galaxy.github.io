@@ -1,6 +1,9 @@
 html,body {
     background-color: rgb(142, 225, 236);
     font-family: '宋体', 'Microsoft YaHei', sans-serif;
+    /* background-image: url("../素材/milky_way.png"); */
+    /* background-position: center top; 背景图居中对齐，顶部开始 */
+    /* background-size: cover; 背景图宽度自动和屏幕宽度一致 */
 }
 
 /* 顶部部分模块 */
@@ -36,8 +39,10 @@ html,body {
     flex: 5;
     padding: 10px;
     background-color: white;
-    border: 2px solid #3498db; /* 设置边框样式和颜色 */
-    box-shadow: 0 0 10px #3498db; /* 添加发光效果 */
+    border: 2px solid; /* 设置边框样式和颜色 */
+    border-color: beige;
+    box-shadow: 0 0 10px beige,
+                0 0 20px beige; /* 添加发光效果 */
     border-radius: 5px;
 }
 
@@ -74,6 +79,28 @@ text-align: right;
     0 0  80px #7b72f3; */
 }
 
+.select_addr {
+    margin-right: 5px;
+    height: 40px;
+    width: 130px;
+    color: black;
+    justify-content: space-between; /* 将子元素均匀分布在两边 */
+    align-items: center; /* 垂直居中对齐 */
+    /* justify-content: center; */
+    align-items: center;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    float: left;
+    /* text-shadow: 0 0  10px #7b72f3,
+    0 0  20px #7b72f3,
+    0 0  40px #7b72f3,
+    0 0  80px #7b72f3; */
+}
+
 .addr_name {
     font-weight: bold;
     padding-left: 5px;
@@ -84,8 +111,21 @@ text-align: right;
     color: gray;
 }
 
+.web_class {
+    padding-left: 10px;
+    color: gray;
+}
+
 .addr_delete {
     padding-right: 5px;
+}
+
+.myWeb_status {
+    margin-right: 5px;
+}
+
+.myWeb_status:hover .web_status{
+    width: 21px;
 }
 
 .myAddr_delete {
@@ -97,9 +137,30 @@ text-align: right;
     display: none;
 }
 
+.addr_web_name {
+    display: none;
+}
+
 .delete_img {
     width: 20px;
 }
+
+.web_status {
+    width: 20px;
+}
+
+#webAddress::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.selectWeb::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 .addWeb_input {
     width: 350px;
