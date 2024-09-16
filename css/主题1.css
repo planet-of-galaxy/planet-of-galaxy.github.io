@@ -4,15 +4,6 @@ html,body {
     /* background-image: url("../img/教堂婚礼_清晨.jpg"); */
 }
 
-#addrLinkGroup {
-    /* background-color: red; */
-    background-image: url("../素材/黄昏.png");
-    min-width: 800px;
-    max-width: 1200px;
-    border-radius: 10px;
-    padding-top: 10px;
-}
-
 /* 顶部部分模块 */
 #body_top{
     margin: 0;

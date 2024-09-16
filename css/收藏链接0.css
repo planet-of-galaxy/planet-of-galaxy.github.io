@@ -6,8 +6,8 @@
     padding-top: 10px;
 }
 
-/* 编辑按钮 */
-#edit {
+/* 选项按钮 */
+#option{
     text-align: left;
     padding-left: 50px;
 }
@@ -18,11 +18,11 @@
 }
 
 
-#edit_img {
+.img {
     height: 20px;
 }
 
-#edit_frame {
+.frame {
     display: flex;
     border-radius: 10px;
     justify-content: center;
@@ -31,7 +31,13 @@
     height: 30px; /* 根据需要设置 edit_frame 的高度 */
 }
 
-#edit_frame:hover {
+.kid {
+    margin-right: 5px;
+    display: inline-block;
+    width: 30px;
+}
+
+.frame:hover {
     background-image: url("../素材/白色半透明.png");
 }
 
