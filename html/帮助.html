@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- 常用模块 -->
+<!-- "插入空行" <div class="white_block"></div> -->
+<!-- "插入测试块" <div class="test_block"></div> -->
+
+<html>
+    <head>
+        <title>帮助</title>
+        <meta charset="utf-8">
+        <link href="帮助.css" rel="stylesheet">
+        <script src="jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="帮助.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="body_top">
+            <!-- 顶部部分模块 -->
+            <div class="test_block">"我是顶部部分模块"</div>
+        </div>
+        <div id="body_middle">
+            <!-- 中间部分模块 -->
+            <div id="middle_left">
+                <!-- 中间偏左部分模块 -->
+                <div class="test_block">"我是中间偏左部分模块"</div>
+            </div>
+            <div id="middle_middle">
+                <!-- 中间的中间部分模块 -->
+                <div class="test_block">"我是中间的中间部分模块"
+                    <div id="hidden_block_0" class="hidden_block">"我是隐藏模块"</div>
+                </div>
+            </div>
+            <div id="middle_right">
+                <!-- 中间偏右部分模块 -->
+                <div class="test_block">"我是中间偏右部分模块"</div>
+            </div>
+        </div>
+        <div id="body_bottom">
+            <!-- 底部部分模块 -->
+            <div class="test_block">"我是底部部分模块"</div>
+        </div>
+    </body>
+</html>
