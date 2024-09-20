@@ -5,51 +5,6 @@
     min-width: none;
 }
 
-#theme:hover #theme_context {
-    max-width: 500px;
-}
-
-#theme_container {
-    border-style: none;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-/* #theme:hover #theme_context{
-    display: block;
-} */
-
-#theme_lable {
-    height: 25px;
-    text-align: center;
-    justify-items: center;
-    padding-right: 5px;
-    float: left;
-}
-
-#theme_context {
-    justify-items: center;
-    font-size: 15px;
-    max-width: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    transition: max-width 0.5s ease;
-    display: inline-block;
-}
-#theme_id {
-    display: none;
-}
-
-.theme_frame {
-    display: inline-block;
-    vertical-align: middle; /* 垂直对齐方式 */
-    justify-content: center;
-    align-items: center;
-    /* width: 30px; 根据需要设置 edit_frame 的宽度 */
-    /* height: 30px; 根据需要设置 edit_frame 的高度 */
-    /* background-color: wheat; */
-}
-
 #submit {
     background-image: url("../素材/正午.png");
     border-radius: 3px;
@@ -58,4 +13,5 @@
 
 #submit:hover {
     background-image: url("../素材/清晨.png");
+    color: black;
 }
