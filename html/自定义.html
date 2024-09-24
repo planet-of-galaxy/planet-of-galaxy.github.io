@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<!-- 常用模块 -->
+<!-- "插入空行" <div class="white_block"></div> -->
+<!-- "插入测试块" <div class="test_block"></div> -->
+
+<html>
+    <head>
+        <title>0号星球</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/动态背景.css" rel="stylesheet">
+        <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+        <link rel="icon" href="../素材/planet.png">
+        <link href="../css/主题.css" rel="stylesheet">
+        <script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/主题.js" charset="utf-8"></script>
+        <link href="../css/时钟.css" rel="stylesheet">
+        <script src="../js/时钟.js" charset="utf-8"></script>
+        <link href="../css/收藏链接.css" rel="stylesheet">
+        <script src="../js/收藏链接.js" charset="utf-8"></script>
+        <link href="../css/搜索框.css" rel="stylesheet">
+        <script src="../js/搜索框.js" charset="utf-8"></script>
+        <link href="../css/图标.css" rel="stylesheet">
+        <script src="../js/图标.js" charset="utf-8"></script>
+        <link href="../css/主题切换.css" rel="stylesheet">
+        <script src="../js/主题切换.js" charset="utf-8"></script>
+
+        
+        <link href="../css/自定义.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- 视频背景 -->
+        <video id="background_vedio" class="video-background" autoplay muted loop>
+            <source src="../vedio/自定义.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div id="body_top">
+            <!-- 顶部部分模块 -->
+            <div id="theme">
+                <div id="theme_lable">主题</div>
+                <div id="theme_container">
+                    <form id="theme_context" name="theme_context">
+                        <input type="radio" id="theme_0" name="theme_radio" value="主题0"/>萤火星河
+                        <input type="radio" id="theme_1" name="theme_radio" value="主题1"/>白露
+                        <input type="radio" id="theme_2" name="theme_radio" value="主题2"/>自定义
+                        <input type="submit" id="submit" value="确认"/>
+                    </form></div><br>
+                <p id="theme_id">主题2</p>
+                <div id="white_block"></div>
+            </div>
+            <div class="white_block"></div>
+            <div class="white_block"></div>
+            <div id="time-box">
+                <div id="time_block">
+                    <div id="time_context">00:00</div>
+                    <div id="week_context">XX月XX日 星期X</div>
+                </div>
+            </div>
+            <div id="search-box">
+                <form id="search1" class="search">
+                    <input id="search-input1" class="search-input" type="text">
+                    <a href="" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <input class="search-submit" type="submit">
+                </form>
+                <form id="search2" class="search">
+                    <input id="search-input2" class="search-input" type="text">
+                    <a href=""  class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <input class="search-submit" type="submit">
+                </form>
+                <form id="search3" class="search">
+                    <input id="search-input3" class="search-input" type="text">
+                    <a href="" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <input class="search-submit" type="submit">
+                </form>
+            </div>
+        </div>
+        <div id="body_middle">
+            <!-- 中间部分模块 -->
+            <div id="middle_left">
+                <!-- 中间偏左部分模块 -->
+            </div>
+            <div id="middle_middle">
+                <!-- 中间的中间部分模块 -->
+                <div id="hidden_block_0" class="hidden_block">
+                    <div id="addrLinkGroup">
+                        <!-- <div id="search-box2">
+                            <form id="search4">
+                                <input type="text" id="search-input4"/>
+                                <a href="" id="search-btn2"><img id="search-submit1" src="../素材/search_white.png"/></a>
+                                <input class="search-submit" type="submit">
+                            </form>
+                        </div> -->
+                        <p id="option">
+                            <a id="edit_a" class="kid"  href="我的收藏.html">
+                                <span id="edit_frame" class="frame"><img id="edit_img" class="img" src="../素材/edit_white.png"/></span>
+                            </a>
+                            <a id="help_a" class="kid" href="帮助.html">
+                                <span id="help_frame" class="frame"><img id="help_img" class="img" src="../素材/help_white.png"/></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="middle_right">
+                <!-- 中间偏右部分模块 -->
+            </div>
+        </div>
+        <div id="body_bottom">
+            <!-- 底部部分模块 -->
+        </div>
+    </body>
+</html>

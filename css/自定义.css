@@ -1,0 +1,38 @@
+body {
+    /* 是否采用静态图片背景 */
+     /* 采用： 设置背景图片路径 */
+    /* background-image: url('../img/自定义.jpg'); */
+}
+
+#background_vedio {
+    /* 是否关闭视频背景 */
+    /* 关闭： 解除以下注释 */
+    /* display: none; */
+}
+
+#theme {
+    /* 标题“主题”的颜色 */
+    color: white;
+}
+
+#addrLinkGroup {
+    /* “收藏网址”的背景 */
+    background-image: url("../素材/正午.png");
+}
+
+:root {
+    /* 鼠标悬浮在链接上时显示的荧光色 */
+    --hover-color: #f5ffc7; /* 定义颜色变量 */
+}
+
+/* 不要管 */
+.addr_link:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+    box-shadow: 0 0  10px var(--hover-color),
+                0 0  20px var(--hover-color);
+    text-shadow: 0 0  10px var(--hover-color),
+                 0 0  20px var(--hover-color),
+                 0 0  40px var(--hover-color),
+                 0 0  80px var(--hover-color);
+}

@@ -8,35 +8,95 @@
     <head>
         <title>帮助</title>
         <meta charset="utf-8">
-        <link href="帮助.css" rel="stylesheet">
-        <script src="jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="帮助.js" charset="utf-8"></script>
+        <link rel="icon" href="../素材/help.png">
+        <link href="../css/帮助.css" rel="stylesheet">
+        <script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/帮助.js" charset="utf-8"></script>
     </head>
     <body>
         <div id="body_top">
             <!-- 顶部部分模块 -->
-            <div class="test_block">"我是顶部部分模块"</div>
         </div>
         <div id="body_middle">
             <!-- 中间部分模块 -->
             <div id="middle_left">
                 <!-- 中间偏左部分模块 -->
-                <div class="test_block">"我是中间偏左部分模块"</div>
+                <div id="button_label">
+                    <p id="help_0" class="help_p"><span class="help_span"><img class="help_img" src="../素材/book.png"><button class="help_button">使用说明</button></span></p><br>
+                    <p id="help_1" class="help_p"><span class="help_span"><img class="help_img" src="../素材/home.png"><button class="help_button">设为主页</button></span></p><br>
+                    <p id="help_2" class="help_p"><span class="help_span"><img class="help_img" src="../素材/refresh.png"><button class="help_button">更改背景</button></span></p><br>
+                    <p id="help_3" class="help_p"><span class="help_span"><img class="help_img" src="../素材/mail.png"><button class="help_button">联系作者</button></span></p><br>
+                </div>
             </div>
             <div id="middle_middle">
                 <!-- 中间的中间部分模块 -->
-                <div class="test_block">"我是中间的中间部分模块"
-                    <div id="hidden_block_0" class="hidden_block">"我是隐藏模块"</div>
+                <div id="hidden_block_0" class="hidden_block">
+                    <h2>主界面</h2>
+                    <div class="context"><img class="instractions" src="../素材/使用说明1.png"></div>
+                    <h2>导航界面</h2>
+                    <div class="context"><img class="instractions" src="../素材/使用说明2.png"></div>
+                    <h2>收藏页面</h2>
+                    <div class="context"><img class="instractions" src="../素材/使用说明3.png"></div>
+                </div>
+                <div id="hidden_block_1" class="hidden_block">
+                    <h2>设为主页</h2>
+                    <p>由于大部分浏览器不支持网页自动设为首页，所以需要手动设置。</p>
+                    <p>以Google浏览器为例，介绍设置步骤，其他浏览器也可参考，步骤大致相同。</p>
+                    <h2>Google浏览器</h2>
+                    <p>谷歌浏览器可以自定义两个页面，一个是主页，一个是启动时页面。</p>
+                    <p>主页：左上角会显示“主页”按钮，点击该按钮便跳转到主页。</p>
+                    <p>启动时页面：浏览器启动时自动跳转到的页面。</p>
+                    <h2>1. 复制地址</h2>
+                    <div class="context"><img class="instractions" src="../素材/设为主页1.png"></div>
+                    <h2>2. 打开设置</h2>
+                    <div class="context"><img class="instractions" src="../素材/设为主页2.png"></div>
+                    <h2>3. 设置“主页”（只想设置“启动时页面”的可以略过这一步）</h2>
+                    <div class="context"><img class="instractions" src="../素材/设为主页3.png"></div>
+                    <h2>4. 设置“启动时页面”（只想设置“主页”的可以略过这一步）</h2>
+                    <div class="context"><img class="instractions" src="../素材/设为主页4.png"></div>
+                </div>
+                <div id="hidden_block_2" class="hidden_block">
+                    <h2>自定义背景</h2>
+                    <p>可以自定义动态或者静态背景，由于默认是动态背景，所以自定义动态背景稍微简单些，自定义静态背景稍微复杂些。</p>
+                    <h2>自定义动态背景</h2>
+                    <p>1. 进入vedio文件夹</p>
+                    <div class="context"><img class="instractions" src="../素材/更改背景1.png"></div>
+                    <p>2. 把你的视频改名为“自定义.mp4”即可</p>
+                    <div class="context"><img class="instractions" src="../素材/更改背景2.png"></div>
+                    <h2>自定义静态背景</h2>
+                    <p>设置静态背景需要设置背景图片，还需要关闭掉视频背景才行</p>
+                    <h2>1. 进入img文件夹</h2>
+                    <div class="context"><img class="instractions" src="../素材/更改背景3.png"></div>
+                    <h2>2. 自定义的图片放到这个文件夹里，是否改名没关系</h2>
+                    <div class="context"><img class="instractions" src="../素材/更改背景4.png"></div>
+                    <h2>3. 进入css文件夹</h2>
+                    <div class="context"><img class="instractions" src="../素材/更改背景5.png"></div>
+                    <h2>4. 右键“自定义.css”，选择“打开方式”</h2>
+                    <div class="context"><img class="instractions" src="../素材/更改背景6.png"></div>
+                    <h2>5. 选择你熟悉的文本编辑器</h2>
+                    <div class="context"><img class="instractions" src="../素材/更改背景7.png"></div>
+                    <h2>6. 如图所示更改代码</h2>
+                    <div class="context"><img class="instractions" src="../素材/更改背景8.png"></div>
+                    <h2>7. 改改文字颜色也是可以的</h2>
+                    <div class="context"><img class="instractions" src="../素材/更改背景9.png"></div>
+                    <h2>8. 完成</h2>
+                    <div class="context"><img class="instractions" src="../素材/更改背景10.png"></div>
+                    <div class="context"><img class="instractions" src="../素材/更改背景11.png"></div>
+                </div>
+                <div id="hidden_block_3" class="hidden_block">
+                    <h2>联系作者</h2>
+                    <p>如果你遇到一些bug，或者需要作者帮你做自定义更改，亦或是需要定制一些其他功能，欢迎联系。</p>
+                    <p>微信:</p>
+                    <div class="context"><img id="myCard" class="instractions" src="../素材/联系作者.png"></div>
+                    <p>邮箱: 1072342940@qq.com</p>
                 </div>
             </div>
             <div id="middle_right">
                 <!-- 中间偏右部分模块 -->
-                <div class="test_block">"我是中间偏右部分模块"</div>
             </div>
         </div>
         <div id="body_bottom">
             <!-- 底部部分模块 -->
-            <div class="test_block">"我是底部部分模块"</div>
         </div>
     </body>
 </html>

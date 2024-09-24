@@ -1,7 +1,11 @@
 html,body {
     margin: 0;
     padding: 0;
-    /* background-image: url("../img/教堂婚礼_清晨.jpg"); */
+    /* background-image: url("../img/梦中的婚礼.jpg"); */
+    background-size: cover; /* 使背景图片适应屏幕大小 */
+    background-repeat: no-repeat; /* 防止背景图片重复 */
+    background-attachment: fixed; /* 背景图片固定，不随滚动条滚动 */
+    background-position: center; /* 背景图片居中显示 */
 }
 
 /* 顶部部分模块 */

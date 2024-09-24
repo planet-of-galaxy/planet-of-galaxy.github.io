@@ -7,7 +7,7 @@
 }
 
 :root {
-    --hover-color: #7b72f3; /* 定义颜色变量 */
+    --hover-color: hsl(240, 100%, 92%); /* 定义颜色变量 */
 }
 
 .addr_link:hover {

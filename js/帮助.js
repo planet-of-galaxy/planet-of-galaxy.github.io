@@ -4,6 +4,9 @@ $(document).ready(function(){
     // 初始化所有隐藏模块的状态为 false
     setHiddenBlockArray();
 
+    var show = -1;
+    hiddenBlockCliked(0);
+
     // 点击时间模块 重载页面
     $("#time_block").click(function(){
         location.reload();
@@ -11,18 +14,44 @@ $(document).ready(function(){
 
     // 点击中间偏左模块
     $("#middle_left").click(function(){
-        setHiddenBlockStatus(0, false);
+        // setHiddenBlockStatus(0, false);
     })
 
     // 点击中间的中间模块
     $("#middle_middle").click(function(){
-        setHiddenBlockStatus(0, true);
+        // setHiddenBlockStatus(0, true);
     })
 
     // 点击中间偏右模块
     $("#middle_right").click(function(){
-        setHiddenBlockStatus(0, false);
+        // setHiddenBlockStatus(0, false);
     })
+
+    //侧边栏跳转
+    $("#help_0").click(function(){
+        hiddenBlockCliked(0);
+    })
+    $("#help_1").click(function(){
+        hiddenBlockCliked(1);
+    })
+    $("#help_2").click(function(){
+        hiddenBlockCliked(2);
+    })
+    $("#help_3").click(function(){
+        hiddenBlockCliked(3);
+    })
+
+    function hiddenBlockCliked(index) {
+        if (show != index) {
+            $("#help_" + show).css("background-color", "transparent");
+
+            setHiddenBlockStatus(show, false);
+            show = index;
+            setHiddenBlockStatus(show, true);
+
+            $("#help_" + show).css("background-color", "beige");
+        }
+    }
 
     function setHiddenBlockArray() {
         for (var i = 0; i < $(".hidden_block").length; i++) {
@@ -35,9 +64,9 @@ $(document).ready(function(){
 
         hidden_block[index] = status;
         if (status) {
-            $("#" + hidden_block_id).fadeIn();
+            $("#" + hidden_block_id).show();
         } else {
-            $("#" + hidden_block_id).fadeOut();
+            $("#" + hidden_block_id).hide();
         }
         
     }

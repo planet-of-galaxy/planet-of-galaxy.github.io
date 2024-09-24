@@ -1,5 +1,5 @@
 html,body {
-    background-color: rgb(142, 225, 236);
+    background-color: rgb(255, 255, 255);
     font-family: '宋体', 'Microsoft YaHei', sans-serif;
     /* background-image: url("../素材/milky_way.png"); */
     /* background-position: center top; 背景图居中对齐，顶部开始 */
@@ -39,11 +39,10 @@ html,body {
     flex: 5;
     padding: 10px;
     background-color: white;
-    border: 2px solid; /* 设置边框样式和颜色 */
+    border: none; /* 设置边框样式和颜色 */
     border-color: beige;
-    box-shadow: 0 0 10px beige,
-                0 0 20px beige; /* 添加发光效果 */
-    border-radius: 5px;
+    box-shadow: -10px -10px 10px rgb(194, 194, 194); /* 添加发光效果 */
+    border-radius: 10px;
 }
 
 /* 编辑按钮 */

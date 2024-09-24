@@ -68,5 +68,71 @@ html,body {
 
 /* 隐藏模块 */
 .hidden_block {
+    border: none;
+    border-radius: 20px;
+    box-shadow: -10px -10px 10px rgb(194, 194, 194);
     display: none;
+}
+
+/* 帮助页面 */
+#button_label {
+    margin-top: 20px;
+}
+
+.help_button {
+    border: none;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.help_p {
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.help_span {
+    width: 100%;
+}
+
+.help_p:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.help_img {
+    height: 15px;
+}
+
+h2 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+p {
+    padding-left: 50px;
+}
+
+.context {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instractions {
+    width: 80%;
+}
+
+#myCard {
+    width: 500px;
 }
