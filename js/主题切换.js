@@ -50,6 +50,8 @@ $(document).ready(function(){
         } else if (theme == "主题1"){
             window.location.href = "主题1.html";
         } else if (theme == "主题2"){
+            window.location.href = "主题2.html";
+        }  else if (theme == "主题3"){
             window.location.href = "自定义.html";
         } else {
             localStorage.setItem("theme", "主题0");

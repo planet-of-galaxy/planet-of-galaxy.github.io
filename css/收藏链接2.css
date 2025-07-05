@@ -1,0 +1,24 @@
+#addrLinkGroup {
+    background-image: url("../素材/黄昏.png");
+    min-width: 800px;
+    min-height: 80px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+:root {
+    --hover-color: #f5ffc7; /* 定义颜色变量 */
+}
+
+.addr_link:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+    box-shadow: 0 0  10px var(--hover-color),
+                0 0  20px var(--hover-color);
+    text-shadow: 0 0  10px var(--hover-color),
+                 0 0  20px var(--hover-color),
+                 0 0  40px var(--hover-color),
+                 0 0  80px var(--hover-color);
+}
+
+

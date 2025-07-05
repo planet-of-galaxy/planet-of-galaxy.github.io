@@ -1,0 +1,17 @@
+#theme {
+    color: white;
+
+    /* 根据theme数量进行调整 */
+    min-width: none;
+}
+
+#submit {
+    background-image: url("../素材/正午.png");
+    border-radius: 3px;
+    border-style: none;
+}
+
+#submit:hover {
+    background-image: url("../素材/清晨.png");
+    color: black;
+}
